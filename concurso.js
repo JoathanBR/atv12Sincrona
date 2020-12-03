@@ -33,6 +33,16 @@ function listarTodos(){
 }
 
 function aprovados(){
+
+    function compare(a,b) {
+        if (a.numeroAcertos > b.numeroAcertos)
+           return -1;
+        if (a.numeroAcertos < b.numeroAcertos)
+          return 1;
+        return 0;
+      }
+
+      candidatos.sort(compare)
     candidatos.forEach(function(valor){
         if(valor.numeroAcertos >= min)
         document.getElementById('listarAprovados').innerHTML += valor.nome + " - " + valor.numeroAcertos + " acertos<br>"
