@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa Concurso</title>
+
+    <style>
+        .baixo{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Programa Concurso</h1>
+    <div>
+        Candidato: <input type="text" id="nome">
+        Nº Acertos: <input type="text" id="acertos">
+        <button onclick="adicionarCandidato()">Adicionar</button>
+    </div>
+    <div class="baixo">
+        <button onclick="listarTodos()">Listar Todos</button>
+        <button onclick="aprovados()">Aprovados 2ª Etapa</button>
+    </div>
+    <p id="listar"></p>
+    <hr>
+    <h3>Aprovados:</h3>
+    <p id="listarAprovados"></p>
+
+    <script src="concurso.js"></script>
+</body>
+</html>

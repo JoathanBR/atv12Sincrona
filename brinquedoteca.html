@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brinquedoteca</title>
+</head>
+<body>
+    <h1>Programa Brinquedoteca</h1>
+    <div>
+        Nome da Criança: <input type="text" id="nomeCrianca">
+        Idade: <input type="text" id="idadeCrianca">
+        <button id="adicionarCrianca" onclick="adicionarCrianca()">Adicionar</button>
+    </div>
+    <div>
+        <button id="listarCrianca" onclick="listarCrianca()">Listar Todos</button>
+        <button id="resumirCrianca" onclick="resumirIdade()">Resumir por Idade</button>
+    </div>
+    <p id="resultadoCrianca"></p>
+    <script src="brinquedoteca.js"></script>
+</body>
+</html>
